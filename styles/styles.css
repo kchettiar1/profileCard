@@ -31,11 +31,10 @@ body {
 
 .card {
   margin-block-end: 14.6rem;
-  border: 1px solid var(--white);
   border-radius: 2.5rem;
   background-color: var(--white);
   width: 32.6rem;
-  height: 37.4rem;
+  height: 38rem;
   margin: 0 auto;
 }
 
@@ -45,9 +44,10 @@ body {
 }
 
 .card-profile-image {
+  width: 10rem;
+  margin: 0 auto;
   margin-block-start: -5rem;
   margin-block-end: 2.5rem;
-  margin-inline-start: 11.2rem;
 }
 .card-profile-image img {
   height: 10rem;
@@ -81,7 +81,6 @@ body {
   margin-block-start: 1.5rem;
 }
 
-
 .card-stats {
   margin-block-start: 2.5rem;
   margin-block-end: 2.5rem;
@@ -101,7 +100,7 @@ body {
 
 .card-stats h2 {
   color: var(--dark-grayish-blue);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .attribution {
@@ -111,4 +110,26 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    height: 720px;
+    background-position: -200px -600px, 720px 266px;
+  }
+
+  .card,
+  .card-banner-image img {
+    width: 35.4rem;
+  }
+
+  .card-profile-image {
+    width: 100px;
+    margin: 0 auto;
+    margin-block-start: -5rem;
+    margin-block-end: 2.5rem;
+  }
 }
