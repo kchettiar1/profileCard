@@ -1,4 +1,111 @@
+:root {
+  /* COLOURS */
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+  --dark-gray-opaque: hsla(0, 0%, 59%, 0.2);
+
+  /* White */
+  --white: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 667px;
+  width: 375px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--dark-cyan);
+  margin-block-start: 14.6rem;
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-position: -746px -601px, 180px 200px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+  margin-block-end: 14.6rem;
+  border: 1px solid var(--white);
+  border-radius: 2.5rem;
+  background-color: var(--white);
+  width: 32.6rem;
+  height: 37.4rem;
+  margin: 0 auto;
+}
+
+.card-banner-image img {
+  width: 32.6rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.card-profile-image {
+  margin-block-start: -5rem;
+  margin-block-end: 2.5rem;
+  margin-inline-start: 11.2rem;
+}
+.card-profile-image img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--white);
+}
+
+.card-profile {
+  text-align: center;
+  border-bottom: 1.5px solid var(--dark-gray-opaque);
+}
+.card-profile h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: inline;
+  padding-right: 1.5rem;
+}
+
+.card-profile h2 {
+  margin-block-end: 2.5rem;
+}
+
+.card-age {
+  color: var(--dark-grayish-blue);
+  font-size: 1.6rem;
+}
+
+.card-location {
+  color: var(--dark-grayish-blue);
+  margin-block-start: 1.5rem;
+}
+
+
+.card-stats {
+  margin-block-start: 2.5rem;
+  margin-block-end: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-stats h1 {
+  font-size: 1.6rem;
+  margin-block-end: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-stats h2 {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
 .attribution {
+  margin-block-start: 10rem;
   font-size: 11px;
   text-align: center;
 }
